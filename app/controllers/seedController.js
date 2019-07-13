@@ -8,12 +8,12 @@ const UsersModel = require('../models/userModel');
 const seedUsers = (req, res) => {
     // create some events
     const users = [
-        { first_name: 'Owanate',  last_name: 'Amachree', email: 'amachreeowanate@gmail.com', password: 'owans'  },
-        { first_name: 'Olanrewaju',  last_name: 'Adigun', email: 'lanreadigun@gmail.com', password: 'lanre'  },
-        { first_name: 'Chinelo',  last_name: 'Neche', email: 'chineloevans@gmail.com', password: 'chinelo'  },
-        { first_name: 'Opubo',  last_name: 'Amachree', email: 'opuboamaks@gmail.com', password: 'emmanuel'  },
-        { first_name: 'Opuine',  last_name: 'Amachree', email: 'opuineamaks@gmail.com', password: 'maudlyn'  },
-        { first_name: 'Ibiere',  last_name: 'Boyle', email: 'ibiereboyle@gmail.com', password: 'ibiere'  },
+        { first_name: 'Somoye',  last_name: 'Ayotunde', email: 'somoye.ayotunde@gmail.com', password: 'somoye'  },
+        { first_name: 'Karan',  last_name: 'Dhilion', email: 'karanpal@gmail.com', password: 'karan'  },
+        { first_name: 'Opeyemi',  last_name: 'Adekunle', email: 'opeyemi@gmail.com', password: 'adekunle'  },
+        { first_name: 'oluwaseun',  last_name: 'peter', email: 'wapjos@gmail.com', password: 'emmanuel'  },
+        { first_name: 'niran',  last_name: 'olawale', email: 'olawale@gmail.com', password: 'olawale'  },
+        { first_name: 'caroline',  last_name: 'taiwo', email: 'caroline@gmail.com', password: 'caroline'  },
 
     ];
 
@@ -32,9 +32,9 @@ const seedUsers = (req, res) => {
 const seedAdmins = (req, res) => {
     // create some events
     const admins = [
-        { first_name: 'Love',  last_name: 'Great', email: 'lovegreat@gmail.com', password: 'lovejah', is_admin: true  },
-        { first_name: 'Better',  last_name: 'Life', email: 'betterlife@gmail.com', password: 'betterlooks', is_admin: true  },
-        { first_name: 'Ayo',  last_name: 'Benson', email: 'ayomlike@gmail.com', password: 'ayolike', is_admin: true  },
+        { first_name: 'Esther',  last_name: 'oyeniyi', email: 'estheroyeniyi@gmail.com', password: 'fggzdges', is_admin: true  },
+        { first_name: 'Peter',  last_name: 'kehinde', email: 'peterkehinde@gmail.com', password: 'gjjdzfzfasfe', is_admin: true  },
+        { first_name: 'Oyewo',  last_name: 'idahosa', email: 'oyewoidahosa@gmail.com', password: 'gfhcgghjtf', is_admin: true  },
     ];
 
     // use the Admin model to insert/save
@@ -76,11 +76,11 @@ const seedTeams = (req, res) => {
 const seedFixtures = (req, res) => {
     // create some events
     const fixtures = [
-        { home_team: 'Chelsea',  away_team: 'Arsenal', match_date: 12-6-2019, match_week: 1, match_time: '13:00', match_stadium: 'Wembley'},
-        { home_team: 'Liverpool',  away_team: 'Arsenal', match_date: 19-6-2019, match_week: 20, match_time: '13:00', match_stadium: 'Old Trafford'},
-        { home_team: 'New Castle',  away_team: 'Arsenal', match_date: 17-6-2019, match_week: 4, match_time: '13:00', match_stadium: 'Wembley'},
-        { home_team: 'Arsenal',  away_team: 'Chelsea', match_date: 13-6-2019, match_week: 2, match_time: '14:00', match_stadium: 'Stadium'},
-        { home_team: 'Everton',  away_team: 'Chelsea', match_date: 14-6-2019, match_week: 3, match_time: '15:00', match_stadium: 'Old Trafford'},
+        { home_team: 'Liverpool',  away_team: 'Arsenal', match_date: 16-7-2019, match_week: 19, match_time: '11:00', match_stadium: 'Old Trafford'},
+        { home_team: 'New Castle',  away_team: 'Arsenal', match_date: 27-7-2019, match_week: 14, match_time: '16:00', match_stadium: 'Wembley'},
+        { home_team: 'Arsenal',  away_team: 'Chelsea', match_date: 19-7-2019, match_week: 12, match_time: '14:00', match_stadium: 'Stadium'},
+        { home_team: 'Chelsea',  away_team: 'Arsenal', match_date: 9-7-2019, match_week: 6, match_time: '19:00', match_stadium: 'Wembley'},
+        { home_team: 'Everton',  away_team: 'Chelsea', match_date: 1-7-2019, match_week: 8, match_time: '16:00', match_stadium: 'Old Trafford'},
 
 
     ];
