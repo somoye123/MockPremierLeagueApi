@@ -1,0 +1,630 @@
+{
+	"info": {
+		"_postman_id": "8c54bb58-bea1-4f94-bbf1-36979886826f",
+		"name": "API-Fictures",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign in User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/user/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signin"
+					]
+				},
+				"description": "User can sign in with email and password, and token via this route\nhttp://localhost:5000/api/v1/user/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				},
+				"description": "User can create an account with first_name, last_name, email,password.\nhttps://premiumfix.herokuapp.com/api/v1/user/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Teams",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/teams/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"add"
+					]
+				},
+				"description": "An admin can add a team but must be logged in using authmiddleware.\nhttp://localhost:5000/api/v1/teams/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Teams As An Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"teams"
+					]
+				},
+				"description": "Get all teams as admin via this route\nhttp://localhost:5000/api/v1/teams"
+			},
+			"response": []
+		},
+		{
+			"name": "Update teams as Admin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/teams/update/:slug",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"update",
+						":slug"
+					],
+					"variable": [
+						{
+							"key": "slug",
+							"value": ""
+						}
+					]
+				},
+				"description": "Admins can update teams using this route\nhttp://localhost:5000/api/v1/teams/update/:slug"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Teams as Admin",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/teams/delete/:slug",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"teams",
+						"delete",
+						":slug"
+					],
+					"variable": [
+						{
+							"key": "slug",
+							"value": ""
+						}
+					]
+				},
+				"description": "Admins can delete teams using this route http://localhost:5000/api/v1/teams/delete/:slug"
+			},
+			"response": []
+		},
+		{
+			"name": "View teams by user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/user/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"teams"
+					]
+				},
+				"description": "Users can view teams using this route http://localhost:5000/api/v1/user/teams"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Teams By User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/user/teams/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"teams",
+						"search"
+					]
+				},
+				"description": "Users can search teams using this route http://localhost:5000/api/v1/user/team/search"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/admin/seed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"seed"
+					]
+				},
+				"description": "Get an admin by seeding data http://localhost:5000/api/v1/admin/seed"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/user/seed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"seed"
+					]
+				},
+				"description": "Get users by seeding data"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/team/seed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"team",
+						"seed"
+					]
+				},
+				"description": "Get teams by seeding data http://localhost:5000/api/v1/team/seed"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Fixtures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/fixture/seed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"fixture",
+						"seed"
+					]
+				},
+				"description": "Get fixtures by seeding data\nhttp://localhost:5000/api/v1/fixture/seed"
+			},
+			"response": []
+		},
+		{
+			"name": "Add fixtures as admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/fixture/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"fixture",
+						"add"
+					]
+				},
+				"description": "Add fixtures only as admin http://localhost:5000/api/v1/fixture/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Fixtures As Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/fixtures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"fixtures"
+					]
+				},
+				"description": "Get fixtures as admin\nhttp://localhost:5000/api/v1/fixtures"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Fixtures as Admin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/fixture/update/:slug",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"fixture",
+						"update",
+						":slug"
+					],
+					"variable": [
+						{
+							"key": "slug",
+							"value": ""
+						}
+					]
+				},
+				"description": "update fixtures as admin http://localhost:5000/api/v1/fixture/update/:slug"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Fixtures As Admin",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/fixture/delete/:slug",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"fixture",
+						"delete",
+						":slug"
+					],
+					"variable": [
+						{
+							"key": "slug",
+							"value": ""
+						}
+					]
+				},
+				"description": "Delete fixtures as admin http://localhost:5000/api/v1/fixture/delete/:slug"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pending Fixtures As User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/pending/fixtures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"pending",
+						"fixtures"
+					]
+				},
+				"description": "Get pending fixtures as user\nhttp://localhost:5000/api/v1/pending/fixtures"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Completed Fixtures As User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/completed/fixtures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"completed",
+						"fixtures"
+					]
+				},
+				"description": "Get completed fixtures as user http://localhost:5000/api/v1/completed/fixtures"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Fixtures As User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/search/fixtures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"search",
+						"fixtures"
+					]
+				},
+				"description": "Search fixtures as authenticated user http://localhost:5000/api/v1/search/fixtures"
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/admin/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"signup"
+					]
+				},
+				"description": "An admin can sign up with email, password, first_name, last_name and id using this route http://localhost:5000/api/v1/admin/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Admin SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/admin/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"signin"
+					]
+				},
+				"description": "An admin can sign in using with email and password using this route http://localhost:5000/api/v1/admin/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "Seed Fixtures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/fixture/seed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"fixture",
+						"seed"
+					]
+				},
+				"description": "Dummy fixtures can be seeded using this route http://localhost:5000/api/v1/fixture/seed"
+			},
+			"response": []
+		}
+	]
+}
